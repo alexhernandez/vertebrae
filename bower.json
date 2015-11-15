@@ -1,0 +1,21 @@
+{
+  "name": "vertebrae",
+  "homepage": "https://github.com/alexhernandez/vertebrae",
+  "authors": [
+    "Alex Hernandez <oorangecchicken@gmail.com>"
+  ],
+  "description": "The Backbone To Your Next UI Kit",
+  "ignore": [
+    "docs/"
+  ],
+  "main": "scss/vertebrae.scss",
+  "keywords": [
+    "UI Kit",
+    "Front-End"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "normalize-css": "~3.0.3",
+    "bootstrap": "~4.0.0"
+  }
+}
