@@ -1,15 +1,22 @@
 // CLEARFIX
-// ========================================== */
+// ______________________________________
 
-@mixin clearfix {
-  &:before {
-    display: table;
-    content: "";
-  }
-
+@mixin clearfix() {
+  &:before,
   &:after {
+    content: " ";
     display: table;
+  }
+  &:after {
     clear: both;
-    content: "";
+  }
+}
+
+// MEDIA QUERY BUILDER
+// ______________________________________
+
+@mixin media-query($breakpoint) {
+  @media (min-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+    @content;
   }
 }
