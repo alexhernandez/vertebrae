@@ -1,0 +1,52 @@
+// GRID NOTES:
+// -
+// GUTTERS - Margin vs. Padding
+// SIZING - PX, %, EM, REM
+
+$grid-columns: 12;
+$gutter: 30px;
+$column-names: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve;
+
+.container{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 768px) {
+    max-width: 750px;
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+    max-width: 970px;
+  }
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px) {
+    max-width: 1170px;
+  }
+}
+
+.grid{
+  @include clearfix();
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column{
+  width: auto;
+  min-height: 1px;
+  padding-left: ($gutter / 2);
+  padding-right: ($gutter / 2);
+}
+
+@media only screen and (min-width : 768px) {
+  @each $column in $column-names {
+    $i: index($column-names, $column);
+    .#{$column} {
+        float: left;
+        width: (($i / $grid-columns) * 100%);
+    }
+  }
+}

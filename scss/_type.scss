@@ -1,0 +1,33 @@
+//
+// TYPE
+// =========================== //
+
+h1,h2,h3,h4,h5,h6{
+  // Base Reset
+  margin-top: 0;
+
+  font-family: $font-family-base;
+  font-weight: 600;
+  color: $gray-dark;
+}
+
+.display-heading{
+  color: $gray-dark;
+  font-size: 62px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.sub-headline{
+  color: $gray-light;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+p {
+  color: $gray-light;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}

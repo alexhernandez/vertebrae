@@ -1,2 +1,2 @@
-# vertebrae
-The Backbone To Your Next UI Kit
+# _Vertebrae
+The Backbone Of Your Next UI Kit.
