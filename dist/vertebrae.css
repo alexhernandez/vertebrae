@@ -481,11 +481,6 @@ p {
 .container:after {
   clear: both;
 }
-@media (min-width: 544px) {
-  .container {
-    max-width: 480px;
-  }
-}
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -522,7 +517,7 @@ p {
   padding-right: 15px;
 }
 
-@media (min-width: 544px) {
+@media (min-width: 768px) {
   .one {
     float: left;
     width: 8.33333%;

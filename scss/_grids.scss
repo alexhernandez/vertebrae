@@ -10,14 +10,14 @@ $grid-gutter: 30px;
 $grid-column-names: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve;
 
 $grid-breakpoints: (
-  sm: 544px,
+  // sm: 544px,
   md: 768px,
   lg: 992px,
   xl: 1200px
 );
 
 $container-widths: (
-  sm: 480px,
+  // sm: 480px,
   md: 720px,
   lg: 960px,
   xl: 1140px
@@ -51,10 +51,10 @@ $container-widths: (
   padding-right: ($grid-gutter / 2);
 }
 
-@media (min-width : map-get($grid-breakpoints, "sm")) {
-  @each $column in $grid-column-names {
-    $i: index($grid-column-names, $column);
-    .#{$column} {
+@media (min-width: map-get($grid-breakpoints, "md")) {
+  @each $column-name in $grid-column-names {
+    $i: index($grid-column-names, $column-name);
+    .#{$column-name} {
         float: left;
         width: percentage($i / $grid-columns);
     }
