@@ -46,7 +46,7 @@ $column-names: one, two, three, four, five, six, seven, eight, nine, ten, eleven
     $i: index($column-names, $column);
     .#{$column} {
         float: left;
-        width: (($i / $grid-columns) * 100%);
+        width: percentage($i / $grid-columns);
     }
   }
 }
