@@ -569,6 +569,37 @@ input[type="password"] {
   .twelve {
     float: left;
     width: 100%; } }
+.post, .post--padded {
+  margin-bottom: 10px; }
+  .post:before, .post--padded:before, .post:after, .post--padded:after {
+    content: " ";
+    display: table; }
+  .post:after, .post--padded:after {
+    clear: both; }
+  .post > div, .post--padded > div {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+.post--padded {
+  padding: 20px; }
+
+.post--img-top .post__img {
+  width: 100%;
+  margin-bottom: 10px; }
+.post--img-top .post__content {
+  width: 100%; }
+
+.post__img {
+  width: 25%;
+  float: left; }
+
+.post__content {
+  width: 75%;
+  float: left; }
+
+.img-responsive {
+  max-width: 100%; }
+
 .text-center {
   text-align: center; }
 
