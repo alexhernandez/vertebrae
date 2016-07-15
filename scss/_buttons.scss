@@ -13,6 +13,12 @@
     border: 1px solid #bbb;
     cursor: pointer;
 }
+
+.btn--block{
+  display: block;
+  width: 100%;
+}
+
 .btn__primary{
   @extend %btn;
   background-color: #33C3F0;
@@ -24,4 +30,87 @@
   @extend %btn;
   border: 1px solid #33C3F0;
   color: #33C3F0;
+}
+
+.btn__primary--link{
+  @extend %btn;
+  color: #33C3F0;
+  border: 1px solid transparent;
+
+  &:after {
+    content: "→";
+    font-size: 14px;
+  }
+}
+
+.btn__success{
+  @extend %btn;
+  background-color: $brand-success;
+  border: 1px solid $brand-success;
+  color: #fff;
+}
+
+.btn__success--outline{
+  @extend %btn;
+  border: 1px solid $brand-success;
+  color: $brand-success;
+}
+
+.btn__success--link{
+  @extend %btn;
+  color: $brand-success;
+  border: 1px solid transparent;
+
+  &:after {
+    content: "→";
+    font-size: 14px;
+  }
+}
+
+.btn__warning{
+  @extend %btn;
+  background-color: $brand-warning;
+  border: 1px solid $brand-warning;
+  color: #fff;
+}
+
+.btn__warning--outline{
+  @extend %btn;
+  border: 1px solid $brand-warning;
+  color: $brand-warning;
+}
+
+.btn__warning--link{
+  @extend %btn;
+  color: $brand-warning;
+  border: 1px solid transparent;
+
+  &:after {
+    content: "→";
+    font-size: 14px;
+  }
+}
+
+.btn__danger{
+  @extend %btn;
+  background-color: $brand-danger;
+  border: 1px solid $brand-danger;
+  color: #fff;
+}
+
+.btn__danger--outline{
+  @extend %btn;
+  border: 1px solid $brand-danger;
+  color: $brand-danger;
+}
+
+.btn__danger--link{
+  @extend %btn;
+  color: $brand-danger;
+  border: 1px solid transparent;
+
+  &:after {
+    content: "→";
+    font-size: 14px;
+  }
 }

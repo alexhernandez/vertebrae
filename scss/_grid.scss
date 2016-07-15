@@ -1,0 +1,42 @@
+// GRID NOTES:
+// -
+// COLUMNS      : 12 vs. 24
+// SIZING       : PX, %, EM, REM
+// GUTTERS      : Margin vs. Padding
+// BREAKPOINTS  : XS, SM, MD, LG, XL
+
+$grid-columns: 12;
+$grid-gutter: 30px;
+$grid-column-names: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve;
+
+$grid-breakpoints: (
+  // sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-widths: (
+  // sm: 480px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+.container{
+  @include make-container();
+}
+
+.row{
+  @include make-row();
+}
+
+.column{
+  width: auto;
+  min-height: 1px;
+  position: relative;
+  padding-left: ($grid-gutter / 2);
+  padding-right: ($grid-gutter / 2);
+}
+
+@include make-columns();

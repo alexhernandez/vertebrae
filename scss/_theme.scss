@@ -1,14 +1,18 @@
 // BANNERS
 .banner{
-  padding: 150px 0 75px;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #ccc;
+  padding-top: 100px;
   text-rendering: optimizeLegibility;
 }
 
 .banner_sub-headline,
 .banner_action-item{
   margin-left: 35px;
+}
+
+.section{
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ccc;
 }
 
 // GRID
@@ -21,7 +25,8 @@
   .column{
     border:1px solid #ccc;
     border-radius: 4px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #555;
     text-align: center;
     font-size: 11px;
